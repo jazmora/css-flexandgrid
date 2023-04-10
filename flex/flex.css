@@ -1,0 +1,52 @@
+.contenedor-padre{
+    background-color: aliceblue;
+    display: flex;
+    
+    /* eje principal*/
+    flex-direction: column;  
+    flex-wrap: wrap; /*me permite que los hijos se ajusten al contenedor*/
+    
+    /*eje secundario*/
+    justify-content: center; /*alinea los hijos en el eje principal*/
+    align-items: center; /*alinea los hijos en el eje secundario*/
+    
+}
+
+.contenedor-hijo-1{
+    background-color: aquamarine;
+    order: 1;
+}
+
+.contenedor-hijo-2{
+    background-color:blue;
+    order: 2;
+}
+
+.contenedor-hijo-3{
+    background-color:darkcyan;
+    order: 3;
+}
+
+.contenedor-hijo-4{
+    background-color:cornflowerblue;
+    order: 4;
+}
+    
+.contenedor-hijo-1,
+.contenedor-hijo-2,
+.contenedor-hijo-3,
+.contenedor-hijo-4{
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+}
+
+.contenedor-hijo-especial{
+    background-color: crimson;
+    border: 1px solid black;
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    order: 5;
+    align-self: flex-end;
+}
